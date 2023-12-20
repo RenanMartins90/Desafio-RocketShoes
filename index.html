@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>RocketShoes</title>
+  </head>
+  <body>
+    <main class="principalContainer">
+      <div class="containerLeft">
+        <header class="headerLeft">
+          <ul class="ulLeft">
+            <li class="itemList"><img src="assets/logo.svg" alt="" /></li>
+            <li class="itemList"><a href="#">HOMEM</a></li>
+            <li class="itemList"><a href="#">MULHER</a></li>
+          </ul>
+        </header>
+        <section class="selling">
+          <div class="titles">
+            <h1>Tênis</h1>
+            <h1>Esportivo</h1>
+            <h1>Para Corrida</h1>
+            <h1>Top</h1>
+          </div>
+          <p class="description">
+            Esse tênis tem o intuito de te deixar ainda mais fitness, focado e
+            musculoso.
+          </p>
+          <p class="price">R$ 1.000,00</p>
+          <div class="btnDiv">
+            <button class="buyBtn">COMPRAR</button>
+          </div>
+        </section>
+      </div>
+      <div class="containerRight">
+        <header class="headerRight">
+          <ul class="ulRight">
+            <li class="itemList"><a href="#">CRIANÇA</a></li>
+            <li class="itemList"><a href="#">CUSTOMIZAR</a></li>
+            <li class="itemList">
+              <form action="">
+                <input
+                  class="searchBar"
+                  type="search"
+                  placeholder="Pesquisar"
+                />
+              </form>
+            </li>
+            <li class="itemList">
+              <a class="bag" href="#"
+                ><img src="assets/icon-bag.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </header>
+        <article class="imagesTenis">
+          <div class="bigImg">
+            <img
+              id="imagemAmpliada"
+              src="./assets/tenis-1-ampliado.png"
+              alt="tenis"
+            />
+          </div>
+          <div class="smallImg">
+            <img
+              onclick="trocaImg(this.id)"
+              id="img1"
+              src="./assets/tenis-1-galeria.png"
+              alt=""
+            />
+            <img
+              onclick="trocaImg(this.id)"
+              id="img2"
+              class="selectedImg"
+              src="./assets/tenis-2-galeria.png"
+              alt=""
+            />
+            <img
+              onclick="trocaImg(this.id)"
+              id="img3"
+              src="./assets/tenis-3-galeria.png"
+              alt=""
+            />
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="footer">
+      <ul class="footerLinks">
+        <li>
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/eGUor824a74"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </li>
+        <li><a href="#">FACEBOOK</a></li>
+        <li><a href="#">INSTAGRAM</a></li>
+        <li><a href="#">YOUTUBE</a></li>
+        <li><a href="#">TWITTER</a></li>
+      </ul>
+      <div class="exploreDiv">
+        <a href="#">EXPLORE MAIS <img src="./assets/icon-arrow.svg" /></a>
+      </div>
+    </footer>
+    <script src="./script.js" type="text/javascript"></script>
+  </body>
+</html>
